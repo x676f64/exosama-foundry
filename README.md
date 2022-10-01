@@ -1,3 +1,10 @@
+# To run specific tests
+
+
+```
+forge test --fork-url https://eth-mainnet.g.alchemy.com/v2/${API_KEY} -vvvvv --match-test testBurnWithLock
+```
+
 # Foundry Template [![Github Actions][gha-badge]][gha] [![Foundry][foundry-badge]][foundry] [![License: MIT][license-badge]][license]
 
 [gha]: https://github.com/paulrberg/foundry-template/actions
