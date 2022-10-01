@@ -1,12 +1,14 @@
+# Note
+
+You need to fork ETH mainnet to access the Exosama contract state. You will need to pass your own Alchemy key (they are free with sign-up).
 # To run all tests
 
 ```
-forge test -vvvvv
+forge test --fork-url https://eth-mainnet.g.alchemy.com/v2/${API_KEY} -vvvvv
 ```
 
 # To run specific tests
 
-You need to fork to access the contracts state. You will need to pass your own Alchemy key (they are free with sign-up).
 
 ```
 forge test --fork-url https://eth-mainnet.g.alchemy.com/v2/${API_KEY} -vvvvv --match-test testBurnWithLock
