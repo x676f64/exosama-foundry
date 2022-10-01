@@ -1,8 +1,20 @@
+# To run all tests
+
+```
+forge test -vvvvv
+```
+
 # To run specific tests
 
+You need to fork to access the contracts state. You will need to pass your own Alchemy key (they are free with sign-up).
 
 ```
 forge test --fork-url https://eth-mainnet.g.alchemy.com/v2/${API_KEY} -vvvvv --match-test testBurnWithLock
+```
+
+# To Debug
+```
+forge test --fork-url https://eth-mainnet.g.alchemy.com/v2/${API_KEY} -vvvvv --debug testBurnWithLock
 ```
 
 # Foundry Template [![Github Actions][gha-badge]][gha] [![Foundry][foundry-badge]][foundry] [![License: MIT][license-badge]][license]
